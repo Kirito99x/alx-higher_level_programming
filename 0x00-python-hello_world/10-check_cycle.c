@@ -9,16 +9,16 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *current_cycle = list;
-	listint_t *check_cycle = list;
+	listint_t *check = list;
 
 	if (!list)
 		return (0);
 
-	while (current_cycle && check_cycle && check_cycle->next)
+	while (current_cycle && check && check->next)
 	{
 		current_cycle = current_cycle->next;
-		check_cycle = check_cycle->next->next;
-		if (current_cycle == check_cycle)
+		check = check->next->next;
+		if (current_cycle == check)
 			return (1);
 	}
 
