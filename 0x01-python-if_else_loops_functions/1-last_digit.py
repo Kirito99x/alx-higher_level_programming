@@ -9,4 +9,4 @@ elif digt == 0:
 else:
     if number < 0:
         digt = -digt
-    print(f"Last digit of {number} is {digt} and is less than 6 and not 0")
+        print(f"Last digit of {number} is {digt} and is less than 6 and not 0")
