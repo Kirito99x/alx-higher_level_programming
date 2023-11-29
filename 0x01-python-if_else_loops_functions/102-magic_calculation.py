@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-for i in range(9):
-    for j in range(i + 1, 10):
-        print("{:01d}{:01d}".format(i, j), end=', ' if i < 8 or j < 9 else '\n')
+def magic_calculation(a, b, c):
+    if a < b:
+        return (c)
+    if c > b:
+        return (a + b)
+    return (a*b - c)
