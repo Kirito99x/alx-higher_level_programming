@@ -15,4 +15,3 @@ if __name__ == "__main__":
             if i != 0:
                 print(f"{i}: {sys.argv[i]}")
             i += 1
-
