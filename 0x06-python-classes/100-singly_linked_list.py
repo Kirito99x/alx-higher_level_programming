@@ -23,6 +23,7 @@ class Node:
             TypeError: data is not an integer or next_node is
             not a Node object or None.
         """
+
         self.data = data
         self.next_node = next_node
 
