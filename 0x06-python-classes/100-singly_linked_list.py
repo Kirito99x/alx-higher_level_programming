@@ -1,29 +1,28 @@
 #!/usr/bin/python3
-""" class Node
+"""Node
 """
 
 
 class Node:
-    """class definging a node in a singly linked list.
+    """A class representing a node in a singly linked list.
 
     Attributes:
-        data: data stored in the node.
-        next_node Node/None: Reference to the next node in the list.
+        data (int): The data stored in the node.
+        next_node (Node or None): Reference to the next node in the list.
     """
 
     def __init__(self, data, next_node=None):
-        """defining a node with the given data and next_node.
+        """Initialize a node with the given data and next_node.
 
         Args:
-            data : data to be stored in the node.
-            next_node Node/None: next node in the linked list.
+            data (int): The data to be stored in the node.
+            next_node (Node or None): The next node in the linked list.
             Defaults to None.
 
         Raises:
-            TypeError: data is not an integer or next_node is
+            TypeError: If data is not an integer or next_node is
             not a Node object or None.
         """
-
         self.data = data
         self.next_node = next_node
 
@@ -32,7 +31,7 @@ class Node:
         """Getter method for the data attribute.
 
         Returns:
-            int: data stored in the node.
+            int: The data stored in the node.
         """
         return self.__data
 
@@ -41,10 +40,10 @@ class Node:
         """Setter method for the data attribute.
 
         Args:
-            value: data to be stored in the node.
+            value (int): The data to be stored in the node.
 
         Raises:
-            TypeError: provided value is not an integer.
+            TypeError: If the provided value is not an integer.
         """
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
@@ -52,23 +51,23 @@ class Node:
 
     @property
     def next_node(self):
-        """Getter method the next_node attribute.
+        """Getter method for the next_node attribute.
 
         Returns:
-            Node/None: next node in the linked list or
+            Node or None: The next node in the linked list or
             None if there is no next node.
         """
         return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
-        """Setter method for next_node attribute.
+        """Setter method for the next_node attribute.
 
         Args:
-            value: next node in the linked list or None.
+            value (Node or None): The next node in the linked list or None.
 
         Raises:
-            TypeError: value is not a Node object or None.
+            TypeError: If value is not a Node object or None.
         """
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object or None")
@@ -81,22 +80,22 @@ class Node:
 
 
 class SinglyLinkedList:
-    """A class defining a singly linked list.
+    """A class representing a singly linked list.
 
     Attributes:
-        head: head node of the linked list.
+        head (Node): The head node of the linked list.
     """
 
     def __init__(self):
-        """defining an empty singly linked list.
+        """Initialize an empty singly linked list.
         """
         self.head = None
 
     def __str__(self):
-        """string representation of the linked list.
+        """Return a string representation of the linked list.
 
         Returns:
-            str: string representation of the linked list.
+            str: A string representation of the linked list.
         """
         rtn = ""
         ptr = self.head
@@ -110,10 +109,10 @@ class SinglyLinkedList:
         return rtn
 
     def sorted_insert(self, value):
-        """add a node with the given value in sorted order.
+        """Insert a new node with the given value in sorted order.
 
         Args:
-            value: value to be inserted into the linked list.
+            value (int): The value to be inserted into the linked list.
         """
         ptr = self.head
 

@@ -45,7 +45,7 @@ class Square:
         """Set the size of the square.
 
         Args:
-            value (int): The size of the square.
+            value: The size of the square.
 
         Raises:
             TypeError: If value is not an integer.
