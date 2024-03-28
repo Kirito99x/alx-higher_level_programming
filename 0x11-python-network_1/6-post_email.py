@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""A python script that:
-- takes in  URL,
-- sends request to the URL then displays the value
-- of the X-Request-Id variable found in the header ofthe response.
+"""A  python script that:
+- takes in URL,
+- sends a request to URL and displays the value
+- of the X-Request-Id found in the header of response.
 """
 import sys
 import urllib.request
