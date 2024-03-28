@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Python script that fetches https://alx-intranet.hbtn.io/status"""
-import  urllib
+import  urllib.request
 
 url = "http://alx-intranet.hbtn.io/status"
 
