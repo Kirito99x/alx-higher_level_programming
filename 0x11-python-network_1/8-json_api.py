@@ -2,7 +2,7 @@
 """A python script that:
 - takes a letter
 - sends POST request to http://0.0.0.0:5000/search_user
-with the letter as a param. 
+with the letter as a param.
 """
 import sys
 import requests
